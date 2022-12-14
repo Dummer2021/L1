@@ -113,16 +113,16 @@ Find all Executable files.
 find / -perm /a=x
 ```
 
-15. **Find Files with 777 Permissions and Chmod to 644**
+5. **Find Files with 777 Permissions and Chmod to 644**
 Find all 777 permission files and use the chmod command to set permissions to 644.
 ```
-find / -type f -perm 0777 -print -exec chmod 644 {} \;
+find /home -type f -perm 0777 -print -exec chmod 644 {} \;
 ```
 
 16. **Find Directories with 777 Permissions and Chmod to 755**
 Find all 777 permission directories and use the chmod command to set permissions to 755.
 ```
-find / -type d -perm 777 -print -exec chmod 755 {} \;
+find /home -type d -perm 777 -print -exec chmod 755 {} \;
 ```
 
 17. **Find and remove single File**
@@ -168,19 +168,19 @@ find / -user root -name tecmint.txt
 23. **Find all Files Based on User**
 To find all files that belong to user Tecmint under /home directory.
 ```
-find /home -user tecmint
+find /home -user tech
 ```
 
 24. **Find all Files Based on Group**
 To find all files that belong to the group Developer under /home directory.
 ```
-find /home -group developer
+find /home -group devops
 ```
 
 25. **Find Particular Files of User**
 To find all .txt files of user Tecmint under /home directory.
 ```
-find /home -user tecmint -iname "*.txt"
+find /home -user tech -iname "*.txt"
 ```
 
 26. **Find Last 50 Days Modified Files**
@@ -234,11 +234,11 @@ find / -size +50M -size -100M
 34. **Find and Delete 100MB Files**
 To find all 100MB files and delete them using one single command.
 ```
-find / -type f -size +100M -exec rm -f {} \;
+find /home/ -type f -size +100M -exec rm -f {} \;
 ```
 
 35. **Find Specific Files and Delete**
 Find all .mp3 files with more than 10MB and delete them using one single command.
 ```
-find / -type f -name *.mp3 -size +10M -exec rm {} \;
+find /home/ -type f -name *.mp3 -size +10M -exec rm {} \;
 ```
