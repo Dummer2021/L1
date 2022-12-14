@@ -7,18 +7,18 @@ useradd sa2;passwd sa2
 ```
 touch file1; touch file2; touch file3; ls
 ```
-1. Write the output of a command to list ALL files in the home directory of your user to a file called "directory.out".
+2. Write the output of a command to list ALL files in the home directory of your user to a file called "directory.out".
 ```
 ls -a > directory.out
 ```
 
     You can also list the files using a wild card since the first part of each file we created was "file". Do so by ls file* > directory.out
 
-1. List all the three files you've created above. Then move those files into a new directory called "myfiles"
+3. List all the three files you've created above. Then move those files into a new directory called "myfiles"
 ```
 ls file*; mkdir myfiles; mv file* myfiles/
 ```
-1. Create a compressed archive of your 'myfiles" directory. Then using the tar command and gzip compression option, create a compressed archive of myfiles/. Once done, verify the contents of the file by listing the contents to the console.
+4. Create a compressed archive of your 'myfiles" directory. Then using the tar command and gzip compression option, create a compressed archive of myfiles/. Once done, verify the contents of the file by listing the contents to the console.
 ```
 tar -cvzf myfiles.tar.gz myfiles/
 
