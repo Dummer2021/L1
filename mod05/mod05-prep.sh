@@ -1,4 +1,5 @@
 #!/bin/bash
+
 touch /home/sa/techmint.txt
 touch /home/sa/Techmint.txt
 touch /tmp/.hidden_file

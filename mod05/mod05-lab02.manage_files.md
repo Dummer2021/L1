@@ -1,19 +1,24 @@
+Before start lab:
+```
+useradd sa2;passwd sa2
+```
+
 1. On one line create three files and list the directory output. The file names should be file1, file2, and file 3.
 ```
 touch file1; touch file2; touch file3; ls
 ```
-2. Write the output of a command to list ALL files in the home directory of your user to a file called "directory.out".
+1. Write the output of a command to list ALL files in the home directory of your user to a file called "directory.out".
 ```
 ls -a > directory.out
 ```
 
     You can also list the files using a wild card since the first part of each file we created was "file". Do so by ls file* > directory.out
 
-3. List all the three files you've created above. Then move those files into a new directory called "myfiles"
+1. List all the three files you've created above. Then move those files into a new directory called "myfiles"
 ```
 ls file*; mkdir myfiles; mv file* myfiles/
 ```
-4. Create a compressed archive of your 'myfiles" directory. Then using the tar command and gzip compression option, create a compressed archive of myfiles/. Once done, verify the contents of the file by listing the contents to the console.
+1. Create a compressed archive of your 'myfiles" directory. Then using the tar command and gzip compression option, create a compressed archive of myfiles/. Once done, verify the contents of the file by listing the contents to the console.
 ```
 tar -cvzf myfiles.tar.gz myfiles/
 
@@ -57,7 +62,7 @@ cd course3_video4/my/new/directory/appeared/like/magic
 
 echo "some text" > myfile.txt
 
-chown user.wheel myfile.txt
+chown sa2 myfile.txt
 
 cd ~/
 
@@ -69,7 +74,7 @@ touch myfile.sh
 
 chmod 777 myfile.sh
 
-chown user.wheel myfile.sh
+chown sa2 myfile.sh
 
 chmod 1777 myfile.sh (or chmod +t)
 ```
@@ -83,7 +88,7 @@ Note: 3 in '3777' incorporates both the setgid bit (2), and the sticky bit (1).
 ```
 sudo groupadd linuxacademy
 
-sudo usermod -g linuxacademy user
+sudo usermod -g linuxacademy sa2
 
 logout of the system and log back in
 
