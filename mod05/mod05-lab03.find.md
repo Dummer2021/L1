@@ -1,53 +1,53 @@
 Original from https://www.tecmint.com/35-practical-examples-of-linux-find-command/
 
 1. **Find Files Using Name in Current Directory**
-Find all the files whose name is tecmint.txt in a current working directory.
+Find all the files whose name is techmint.txt in a current working directory.
 ```
-find . -name tecmint.txt
+find . -name techmint.txt
 ```
 ```
-./tecmint.txt
+./techmint.txt
 ```
 
 
 2. **Find Files Under Home Directory**
-Find all the files under /home directory with the name tecmint.txt.
+Find all the files under /home directory with the name techmint.txt.
 ```
-find /home -name tecmint.txt
+find /home -name techmint.txt
 ```
 ```
-/home/tecmint.txt
+/home/techmint.txt
 ```
 
 
 3. **Find Files Using Name and Ignoring Case**
-Find all the files whose name is tecmint.txt and contains both capital and small letters in /home directory.
+Find all the files whose name is techmint.txt and contains both capital and small letters in /home directory.
 ```
-find /home -iname tecmint.txt
+find /home -iname techmint.txt
 ```
 ```
-./tecmint.txt
-./Tecmint.txt
+./techmint.txt
+./Techmint.txt
 ```
 
 
 4. **Find Directories Using Name**
-Find all directories whose name is Tecmint in / directory.
+Find all directories whose name is Techmint in / directory.
 ```
-find / -type d -name Tecmint
+find / -type d -name Techmint
 ```
 ```
-/Tecmint
+/Techmint
 ```
 
 
 5. **Find PHP Files Using Name**
-Find all php files whose name is tecmint.php in a current working directory.
+Find all php files whose name is techmint.php in a current working directory.
 ```
-find . -type f -name tecmint.php
+find . -type f -name techmint.php
 ```
 ```
-./tecmint.php
+./techmint.php
 ```
 
 
@@ -57,7 +57,7 @@ Find all php files in a directory.
 find . -type f -name "*.php"
 ```
 ```
-./tecmint.php
+./techmint.php
 ./login.php
 ./index.php
 ```
@@ -126,9 +126,9 @@ find /home -type d -perm 777 -print -exec chmod 755 {} \;
 ```
 
 17. **Find and remove single File**
-To find a single file called tecmint.txt and remove it.
+To find a single file called techmint.txt and remove it.
 ```
-find . -type f -name "tecmint.txt" -exec rm -f {} \;
+find . -type f -name "techmint.txt" -exec rm -f {} \;
 ```
 
 18. **Find and remove Multiple File**
@@ -160,13 +160,13 @@ find /tmp -type f -name ".*"
 ```
 
 22. **Find Single File Based on User**
-To find all or single files called tecmint.txt under / root directory of owner root.
+To find all or single files called techmint.txt under / root directory of owner root.
 ```
 find / -user root -name tecmint.txt
 ```
 
 23. **Find all Files Based on User**
-To find all files that belong to user Tecmint under /home directory.
+To find all files that belong to user tech under /home directory.
 ```
 find /home -user tech
 ```
@@ -178,7 +178,7 @@ find /home -group devops
 ```
 
 25. **Find Particular Files of User**
-To find all .txt files of user Tecmint under /home directory.
+To find all .txt files of user techmint under /home directory.
 ```
 find /home -user tech -iname "*.txt"
 ```
