@@ -313,4 +313,4 @@ false
 sa@pvserv ~ $
 ```
 
-![img](https://www.gravatar.com/avatar/dfa06b20297d7fddd2fa5c4a1d4990dd?s=50&d=https%3A%2F%2Fassets.tutsplus.com%2Fimages%2Fhub%2Favatar_default.png&r=PG) Оригинал статьи опубликован [Patkos Csaba](https://tutsplus.com/authors/patkos-csaba) 
+![img](https://www.gravatar.com/avatar/dfa06b20297d7fddd2fa5c4a1d4990dd?s=50&d=https%3A%2F%2Fassets.tutsplus.com%2Fimages%2Fhub%2Favatar_default.png&r=PG) [Оригинал](https://code.tutsplus.com/tutorials/the-fundamentals-of-bash-scripting--net-32093?ec_unit=translation-info-language) статьи опубликован [Patkos Csaba](https://tutsplus.com/authors/patkos-csaba) 
